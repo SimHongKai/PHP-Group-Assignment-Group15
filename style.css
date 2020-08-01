@@ -1,0 +1,92 @@
+img {
+    float:left;
+    width: 75px;
+}
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50;
+    background-color: lightblue;
+}
+h1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+label {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+button {
+    background-color: #00218f;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: top;
+    padding: 14px 16px;
+}
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+  
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: black;
+}
+#table tr:nth-child(even){
+    background-color: #ffffff;
+}
+#table tr:nth-child(odd){
+    background-color: #c4c4c4;
+}
+#table tr:hover {background-color: #ddd;}
+  
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(47, 107, 196);
+    color: white;
+}
+/*Header CSS*/
+.header {
+    background-color: rgb(47, 107, 196);
+    padding: 14px 16px;
+    overflow: hidden;
+}
+.header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.header a:hover {
+    background-color: rgb(141, 141, 141);
+    color: black;
+}
+.header a.active {
+    background-color: #00218f;
+    color: white;
+}
+.header2 a {
+    float:right;
+}
+.header2 button {
+    float:right;
+    background-color: #3a3d49;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: top;
+    padding: 14px 16px;
+}
