@@ -38,9 +38,9 @@ if(isset($_POST['submitted'])){
 <form method="post" action="login.php">
 <h1>Log In</h1>
 <label for="username">Username:</label>
-<input type="text" name="username" /><br/><br/>
+<input type="text" name="username" required/><br/><br/>
 <label for="password">Password:</label>
-<input type="password" name="password"/><br/><br/>
+<input type="password" name="password" required/><br/><br/>
 <button type='submit'>Log In</button>
    <input type="hidden" name="submitted" value="submitted"/>
 </form>

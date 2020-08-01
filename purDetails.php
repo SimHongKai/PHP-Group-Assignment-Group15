@@ -16,6 +16,14 @@
             $result = $connect->query($sql);
             if($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
+				
+				$id = $row['bus_id'];
+				$query = "SELECT bus_name FROM bus WHERE bus_id = '$id'";
+				$busName = mysqli_query($connect, $query);//get the associated bus Name
+				//fetch the string from sql object//
+				$busName = mysqli_fetch_row($busName);
+				$busName = $busName[0];
+				
                 echo "You would like to purchase tickets to this route: ";
                 echo "<table border='1px'>
                 <tr><td>Route ID: </td>
@@ -28,8 +36,8 @@
                 <td>".$row['date']."</td></tr>
                 <tr><td>Price: </td>
                 <td>".$row['price']."</td></tr>
-                <tr><td>Bus ID: </td>
-                <td>".$row['bus_id']."</td></tr>";
+                <tr><td>Bus Name: </td>
+                <td>".$busName."</td></tr>";
                 echo "</table>";
             }
             $connect->close();
@@ -40,6 +48,7 @@
             if(isset($_POST['submitted'])){
                 if(isset($_POST['no_of_tickets'])){
                     $username = $_SESSION['username'];
+					date_default_timezone_set("Asia/Kuala_Lumpur");
                     $purchase_date = date('Y-m-d H:i:s');
                     $no_of_tickets = $_POST['no_of_tickets'];
 
@@ -89,6 +98,5 @@
         <input type="hidden" name="submitted" value="submitted"/>
         </form>
         </center>
-		
     </body>
 </html>
