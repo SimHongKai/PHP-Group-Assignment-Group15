@@ -14,20 +14,40 @@
 		</center>
 		<div class="row">
 			<div class="column">
-			<a href = "purDetails.php?id=6">
+			<?php
+			if((isset($_SESSION['login']) && $_SESSION['login'] == 'OK')) {
+				echo "<a href = 'purDetails.php?id=6'>";
+			}else{
+				echo "<a href='login.php'>";
+			}
+			?>
 			<img src="penanghill.jpg" class="gallery"/><br>
 			<figcaption>Penang Hill</figcaption>
 			</a>
 			</div>
 		
 			<div class="column">
-			<a href = "purDetails.php?id=9">
+			<?php
+			if((isset($_SESSION['login']) && $_SESSION['login'] == 'OK')) {
+				echo "<a href = 'purDetails.php?id=9'>";
+			}else{
+				echo "<a href='login.php'>";
+			}
+			?>
+			
 			<img src="thetop.jpg" class="gallery"/><br>
 			<figcaption>The Top</figcaption>
 			</a>
 			</div>
 			
 			<div class="column">
+			<?php
+			if((isset($_SESSION['login']) && $_SESSION['login'] == 'OK')) {
+				echo "<a href = 'purDetails.php?id=6'>";
+			}else{
+				echo "<a href='login.php'>";
+			}
+			?>
 			<a href = "purDetails.php?id=7">
 			<img src="gurney.jpg" class="gallery"/><br>
 			<figcaption>Gurney Plaza</figcaption>
@@ -35,7 +55,13 @@
 			</div>
 		
 			<div class="column">
-			<a href = "purDetails.php?id=8">
+			<?php
+			if((isset($_SESSION['login']) && $_SESSION['login'] == 'OK')) {
+				echo "<a href = 'purDetails.php?id=8'>";
+			}else{
+				echo "<a href='login.php'>";
+			}
+			?>
 			<img src="airport.jpg" class="gallery"/><br>
 			<figcaption>Penang International Airport</figcaption>
 			</a>
