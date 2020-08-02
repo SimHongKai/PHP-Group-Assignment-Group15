@@ -1,5 +1,5 @@
 <div class='header'>
-  <img src="buslogo.png">
+  <img src="buslogo.png" class="headerimg">
   <?php
     if (basename($_SERVER['PHP_SELF']) == 'home.php') {
       echo "<a href='home.php' class='active'>Home</a>";

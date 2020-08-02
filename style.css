@@ -1,7 +1,33 @@
-img {
+.headerimg {
     float:left;
     width: 75px;
 }
+
+.gallery {
+    width: 350px;
+    height: 350px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    margin-left: 140px;
+}
+
+.column {
+    float: left;
+    width: 22%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 body {
     margin-top: 0;
     margin-left: 0;
